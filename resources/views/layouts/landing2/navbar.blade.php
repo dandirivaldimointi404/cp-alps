@@ -49,7 +49,7 @@
                     <li class="menu-item"><a href="#blog" class="menu-link nav-link">Blog</a></li>
                     <li class="menu-item"><a href="#klien" class="menu-link nav-link">Klien</a></li>
                     </li>
-                    <li class="menu-item"><a href="#feature" class="menu-link nav-link">Profile Kami</a>
+                    <li class="menu-item"><a href="{{ route('profill.index')}}" class="menu-link nav-link">Profile Kami</a>
                     </li>
                 </ul>
                 <ul class="menu-btns">
