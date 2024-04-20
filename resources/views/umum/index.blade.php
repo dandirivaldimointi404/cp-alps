@@ -121,18 +121,19 @@
                             <img src="{{ asset('landing/images/product/siskada.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
-                            <h6 class="title">Sistem Informasi Pemilihan Kepala Daerah</h6>
+                            <h6 class="title">Landing Page Siskada</h6>
                             <p class="sub-title">Aplikasi Pemantauan Relawan Pemilu bagi Calon Legistlatif dan Kepala Daerah sebagai salah satu Alat Bantu dan Solusi Cerdas dalam Manajemen Relawan di Pilcaleg dan Pilkada</p>
                         </div><!-- .card-inner-->
                     </a><!-- .card -->
                 </div><!-- .col -->
+
                 <div class="col-lg-4 col-sm-6 col-mb-9">
                     <a href="/demo2/index.html" class="card card-shadow product product-s2">
                         <div class="card-inner product-img bg-warning">
                             <img src="{{ asset('landing/images/product/perumahan.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
-                            <h6 class="title">Warna Indonesia</h6>
+                            <h6 class="title">Landing Page Warna Indonesia</h6>
                             <p class="sub-title">Aplikasi Warna Indonesia
                                 Salah satu Alat Bantu dan Solusi Cerdas dalam
                                 Lingkungan Perumahan</p>
@@ -140,49 +141,53 @@
                         </div><!-- .card-inner-->
                     </a><!-- .card -->
                 </div><!-- .col -->
+
                 <div class="col-lg-4 col-sm-6 col-mb-9">
                     <a href="/demo3/index.html" class="card card-shadow product product-s2">
                         <div class="card-inner product-img bg-warning">
                             <img src="{{ asset('landing/images/product/perumhana_mobile.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
-                            <h6 class="title">Layout - Demo 3</h6>
+                            <h6 class="title">Waris Mobile</h6>
                             <p class="sub-title">keterangan</p>
 
                         </div><!-- .card-inner-->
                     </a><!-- .card -->
                 </div><!-- .col -->
+
                 <div class="col-lg-4 col-sm-6 col-mb-9">
                     <a href="/demo4/index.html" class="card card-shadow product product-s2">
                         <div class="card-inner product-img bg-warning">
-                            <img src="{{ asset('landing/images/product/d.jpg')}}" alt="">
+                            <img src="{{ asset('landing/images/product/mount1.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
-                            <h6 class="title">Layout - Demo 4</h6>
+                            <h6 class="title">Aplikasi Tracker Gunung</h6>
                             <p class="sub-title">keterangan</p>
 
                         </div><!-- .card-inner-->
                     </a><!-- .card -->
                 </div><!-- .col -->
+
                 <div class="col-lg-4 col-sm-6 col-mb-9">
                     <a href="/demo5/index.html" class="card card-shadow product product-s2">
                         <div class="card-inner product-img bg-warning">
-                            <img src="{{ asset('landing/images/product/e.jpg')}}" alt="">
+                            <img src="{{ asset('landing/images/product/sipesat.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
-                            <h6 class="title">Layout - Demo 5</h6>
+                            <h6 class="title">Si Pesat</h6>
                             <p class="sub-title">keterangan</p>
 
                         </div><!-- .card-inner-->
                     </a><!-- .card -->
                 </div><!-- .col -->
+
                 <div class="col-lg-4 col-sm-6 col-mb-9">
                     <a href="/demo6/index.html" class="card card-shadow product product-s2">
                         <div class="card-inner product-img bg-warning">
-                            <img src="{{ asset('landing/images/product/f.jpg')}}" alt="">
+                            <img src="{{ asset('landing/images/product/siskadamobile.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
-                            <h6 class="title">Layout - Demo 6</h6>
+                            <h6 class="title">Siskada Mobile</h6>
                             <p class="sub-title">keterangan</p>
 
                         </div><!-- .card-inner-->
