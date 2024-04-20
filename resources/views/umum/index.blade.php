@@ -45,10 +45,9 @@
 
 
 
-    <section class="section section-service pt-5" id="feature">
+    {{-- <section class="section section-service pt-5" id="feature">
         <div class="container">
             <div class="row">
-                {{-- <div class="row justify-content-center text-center"> --}}
                 <div class="col-xl-7 col-md-8">
                     <div class="section-head">
                         <h2 class="title text-dark">Daftar Aplikasi</h2>
@@ -103,9 +102,9 @@
                 </div><!-- .row -->
             </div>
         </div><!-- .container -->
-    </section>
+    </section> --}}
 
-    <section class="section section-dashboard bg-lighter" id="previews">
+    <section class="section section-dashboard" id="previews">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-10">
@@ -119,22 +118,24 @@
                 <div class="col-lg-4 col-sm-6 col-mb-9">
                     <a href="/demo1/index.html" class="card card-shadow product product-s2">
                         <div class="card-inner product-img bg-warning">
-                            <img src="{{ asset('landing/images/product/a.jpg')}}" alt="">
+                            <img src="{{ asset('landing/images/product/siskada.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
                             <h6 class="title">Sistem Informasi Pemilihan Kepala Daerah</h6>
-                            <p class="sub-title">keterangan</p>
+                            <p class="sub-title">Aplikasi Pemantauan Relawan Pemilu bagi Calon Legistlatif dan Kepala Daerah sebagai salah satu Alat Bantu dan Solusi Cerdas dalam Manajemen Relawan di Pilcaleg dan Pilkada</p>
                         </div><!-- .card-inner-->
                     </a><!-- .card -->
                 </div><!-- .col -->
                 <div class="col-lg-4 col-sm-6 col-mb-9">
                     <a href="/demo2/index.html" class="card card-shadow product product-s2">
                         <div class="card-inner product-img bg-warning">
-                            <img src="{{ asset('landing/images/product/b.jpg')}}" alt="">
+                            <img src="{{ asset('landing/images/product/perumahan.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
-                            <h6 class="title">Layout - Demo 2</h6>
-                            <p class="sub-title">keterangan</p>
+                            <h6 class="title">Warna Indonesia</h6>
+                            <p class="sub-title">Aplikasi Warna Indonesia
+                                Salah satu Alat Bantu dan Solusi Cerdas dalam
+                                Lingkungan Perumahan</p>
 
                         </div><!-- .card-inner-->
                     </a><!-- .card -->
@@ -142,7 +143,7 @@
                 <div class="col-lg-4 col-sm-6 col-mb-9">
                     <a href="/demo3/index.html" class="card card-shadow product product-s2">
                         <div class="card-inner product-img bg-warning">
-                            <img src="{{ asset('landing/images/product/c.jpg')}}" alt="">
+                            <img src="{{ asset('landing/images/product/perumhana_mobile.png')}}" alt="">
                         </div>
                         <div class="card-inner product-info">
                             <h6 class="title">Layout - Demo 3</h6>

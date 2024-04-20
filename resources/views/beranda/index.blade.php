@@ -78,7 +78,7 @@
                       </div><!-- .service -->
                   </div>
               </div><!-- .col- -->
-              <div class="col-mb-6 col-lg-4">
+              {{-- <div class="col-mb-6 col-lg-4">
                   <div class="card card-full service service-s4 after-bg-danger">
                       <div class="card-inner">
                           <div>
@@ -90,7 +90,7 @@
                           </div>
                       </div>
                   </div><!-- .service -->
-              </div><!-- .col -->
+              </div><!-- .col --> --}}
           </div><!-- .row -->
       </div>
   </div><!-- .container -->
