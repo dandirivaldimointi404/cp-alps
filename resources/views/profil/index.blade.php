@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-7 col-md-8">
                     <div class="text-block is-compact">
-                        <h2 class="title">Profesional Website Developer</h2>
+                        <h2 class="title">Profile Alpsstudio</h2>
                         <p class="lead">Kami telah membuat lebih dari 100 website untuk klien kami dalam menyelesaikan
                             masalahnya, kami bantu website anda lebih menarik dan mudah untuk dipahami sehingga target
                             audien, tidak kebingungan dan bisnis goal anda tercapai.</p>
@@ -57,7 +57,7 @@
 
 
 
-    <section class="section section-service pt-5">
+    <section class="section section-service pt-2">
         <div class="container">
             <div class="row">
                 {{-- <div class="row justify-content-center text-center"> --}}
@@ -74,51 +74,46 @@
                         <div class="card card-full service service-s4 after-bg-info">
                             <div class="card-inner">
                                 <div>
-                                    <img src="{{ asset('landing/images/company.png') }}" alt="Your SVG Image">
+                                    <img src="{{ asset('landing/images/websites.png') }}"
+                                        alt="Your SVG Image">
                                 </div>
                                 <div class="service-text">
-                                    <h5 class="title text-dark">Company Profile</h5>
-                                    <p>Buat website perusahaan kamu lebih menarik dan responsif.</p>
+                                    <h5 class="title text-dark">Pembuatan Website</h5>
                                 </div>
                             </div>
                         </div><!-- .service -->
                     </div><!-- .col -->
-
+      
                     <div class="col-mb-6 col-lg-4">
                         <div class="card card-full service service-s4">
                             <div class="card-inner">
                                 <div>
-                                    <img src="{{ asset('landing/images/landing.png') }}" alt="Your SVG Image"
+                                    <img src="{{ asset('landing/images/mobile.png') }}" alt="Your SVG Image"
                                         style="width: auto; height: 162px;">
                                 </div>
                                 <div class="service-text">
-                                    <h5 class="title text-dark">Landing Page</h5>
-                                    <p>Buat landing page untuk kebutuhan iklan, maupun untuk menarik perhatian pelanggan.
-                                    </p>
+                                    <h5 class="title text-dark">Pembuatan Aplikasi Mobile</h5>
                                 </div>
                             </div><!-- .service -->
                         </div>
                     </div><!-- .col- -->
-                    <div class="col-mb-6 col-lg-4">
+                    {{-- <div class="col-mb-6 col-lg-4">
                         <div class="card card-full service service-s4 after-bg-danger">
                             <div class="card-inner">
                                 <div>
-                                    <img src="{{ asset('landing/images/websites.png') }}" alt="Your SVG Image"
+                                    <img src="{{ asset('landing/images/gover.png') }}" alt="Your SVG Image"
                                         style="width: auto; height: 162px;">
                                 </div>
                                 <div class="service-text">
-                                    <h5 class="title text-dark">Web Apps</h5>
-                                    <p>Buat aplikasi, biar bisa di akses lintas platform? aplikasi berbasis website
-                                        solusinya.</p>
+                                    <h5 class="title text-dark">Pembuatan Aplikasi E-Government</h5>
                                 </div>
                             </div>
                         </div><!-- .service -->
-                    </div><!-- .col -->
+                    </div><!-- .col --> --}}
                 </div><!-- .row -->
             </div>
         </div><!-- .container -->
-    </section>
-
+      </section>
     <section class="section section-cta">
         <div class="container">
             <div class="row">
