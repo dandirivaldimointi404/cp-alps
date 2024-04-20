@@ -75,7 +75,7 @@
                         <div class="card card-full service service-s4 after-bg-info">
                             <div class="card-inner">
                                 <div>
-                                    <img src="{{ asset('landing/images/websites.png') }}" alt="Your SVG Image">
+                                    <img src="{{ asset('landing/images/company.png') }}" alt="Your SVG Image">
                                 </div>
                                 <div class="service-text">
                                     <h5 class="title text-dark">Company Profile</h5>
@@ -89,7 +89,7 @@
                         <div class="card card-full service service-s4">
                             <div class="card-inner">
                                 <div>
-                                    <img src="{{ asset('landing/images/mobile.png') }}" alt="Your SVG Image"
+                                    <img src="{{ asset('landing/images/landing.png') }}" alt="Your SVG Image"
                                         style="width: auto; height: 162px;">
                                 </div>
                                 <div class="service-text">
@@ -104,7 +104,7 @@
                         <div class="card card-full service service-s4 after-bg-danger">
                             <div class="card-inner">
                                 <div>
-                                    <img src="{{ asset('landing/images/gover.png') }}" alt="Your SVG Image"
+                                    <img src="{{ asset('landing/images/websites.png') }}" alt="Your SVG Image"
                                         style="width: auto; height: 162px;">
                                 </div>
                                 <div class="service-text">

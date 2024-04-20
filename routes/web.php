@@ -3,6 +3,7 @@
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\GovermentDevController;
 use App\Http\Controllers\MobileDevController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UmumController;
 use App\Http\Controllers\WebDevController;
 use Illuminate\Support\Facades\Route;
@@ -31,3 +32,6 @@ Route::resource('webdev', WebDevController::class);
 Route::resource('mobiledev', MobileDevController::class);
 Route::resource('goverment', GovermentDevController::class);
 Route::resource('umum', UmumController::class);
+Route::resource('profill', ProfileController::class);
+
+
