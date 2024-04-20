@@ -149,7 +149,9 @@
                         </div>
                         <div class="card-inner product-info">
                             <h6 class="title">Waris Mobile</h6>
-                            <p class="sub-title">keterangan</p>
+                            <p class="sub-title"> Aplikasi Warna Indonesia
+                                Salah satu Alat Bantu dan Solusi Cerdas dalam
+                                Lingkungan Perumahan</p>
 
                         </div><!-- .card-inner-->
                     </a><!-- .card -->

@@ -115,7 +115,7 @@
                           </div>
                           <div class="service-text">
                               <h4 class="title">Professional Developer</h4>
-                              <p>Team kami sudah berpengalaman lebih dari 6 tahun.</p>
+                              <p>Team kami sudah yang berpengalaman</p>
                           </div><!-- .service-text -->
                       </div><!-- .service -->
                   </div><!-- .col -->
