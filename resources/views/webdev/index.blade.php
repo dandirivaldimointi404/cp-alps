@@ -42,7 +42,7 @@
                 <div class="col-xl-6 col-lg-7 col-md-8">
                     <div class="text-block is-compact">
                         <h2 class="title">Profesional Website Developer</h2>
-                        <p class="lead">Kami telah membuat lebih dari 100 website untuk klien kami dalam menyelesaikan
+                        <p class="lead">Kami telah membuat berbagai macam website untuk klien kami dalam menyelesaikan
                             masalahnya, kami bantu website anda lebih menarik dan mudah untuk dipahami sehingga target
                             audien, tidak kebingungan dan bisnis goal anda tercapai.</p>
                     </div>
