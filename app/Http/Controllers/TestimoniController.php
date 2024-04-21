@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Testimoni;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-
+use Illuminate\Support\Facades\Storage;
 
 class TestimoniController extends Controller
 {
@@ -83,9 +83,10 @@ class TestimoniController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Testimoni $testimoni)
     {
-        //
+        // $testimoni = Testimoni::all();
+        return view('testimoni.edit', compact('testimoni'));
     }
 
     /**
@@ -95,10 +96,38 @@ class TestimoniController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id_testimoni)
     {
-        //
+        $validatedData = $request->validate([
+            'gambar' => '',
+            'nama_kota' => '',
+            'nama_client' => '',
+            'project' => '',
+            'testimoni' => '',
+            'latitude' => '',
+            'longitude' => '',
+        ]);
+
+        try {
+            $testimoni = Testimoni::findOrFail($id_testimoni);
+
+            if ($request->hasFile('gambar')) {
+                if ($testimoni->gambar) {
+                    Storage::disk('public')->delete($testimoni->gambar);
+                }
+                $imagePath = $request->file('gambar')->store('', 'public');
+                $validatedData['gambar'] = $imagePath;
+            }
+
+            $testimoni->update($validatedData);
+        } catch (\Exception $e) {
+            return redirect()->back()->withInput()->withErrors(['general' => 'Failed to update the data.']);
+        }
+
+        return redirect()->route('testimoni.index')->with('success', 'Data testimoni berhasil diperbarui.');
     }
+
+
 
     /**
      * Remove the specified resource from storage.
@@ -106,8 +135,20 @@ class TestimoniController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id_testimoni)
     {
-        //
+        try {
+            $testimoni = Testimoni::findOrFail($id_testimoni);
+
+            if ($testimoni->gambar) {
+                Storage::disk('public')->delete($testimoni->gambar);
+            }
+
+            $testimoni->delete();
+
+            return redirect()->route('testimoni.index')->with('success', 'Data testimoni berhasil dihapus.');
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['general' => 'Failed to delete the data.']);
+        }
     }
 }
