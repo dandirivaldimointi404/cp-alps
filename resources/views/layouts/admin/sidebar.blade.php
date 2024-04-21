@@ -2,7 +2,7 @@
     <div class="navbar-wrapper">
         <div class="m-header">
             <a href="index.html" class="b-brand">
-                <img src="{{ asset('assets_panel/assets/images/logo-dark.svg')}}" alt class="logo logo-lg" />
+                <img src="{{ asset('assets_panel/assets/images/log.png')}}" alt class="logo logo-lg" />
             </a>
         </div>
         <div class="navbar-content">

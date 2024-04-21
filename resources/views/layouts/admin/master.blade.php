@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>| Berry Bootstrap 5 Admin Template</title>
+    <title>| Alpsstudio</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description"
-        content="Berry is made using Bootstrap 5 design framework. Download the free admin template & use it for your project." />
+        content="Software Pengembangan Website & Aplikasi." />
     <meta name="keywords"
-        content="Berry, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Bootstrap Admin Template" />
+        content="Software Pengembangan Website & Aplikasi." />
     <meta name="author" content="CodedThemes" />
 
-    <link rel="icon" href="{{ asset('assets_panel/assets/images/favicon.svg') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('assets_panel/assets/images/log.png') }}" type="image/x-icon" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
         id="main-font-link" />

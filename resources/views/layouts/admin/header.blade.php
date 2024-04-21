@@ -1,7 +1,8 @@
 <header class="pc-header">
     <div class="m-header">
         <a href="index.html" class="b-brand">
-            <img src="{{ asset('assets_panel/assets/images/logo-dark.svg') }}" alt class="logo logo-lg" />
+            <img src="{{ asset('assets_panel/assets/images/log.png') }}" alt="Logo" class="logo logo-lg" style="width: 100px; height: auto;" />
+
         </a>
 
         <div class="pc-h-item">
