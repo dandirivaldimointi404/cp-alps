@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\GovermentDevController;
+use App\Http\Controllers\KlienController;
 use App\Http\Controllers\MobileDevController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UmumController;
@@ -33,5 +34,7 @@ Route::resource('mobiledev', MobileDevController::class);
 Route::resource('goverment', GovermentDevController::class);
 Route::resource('umum', UmumController::class);
 Route::resource('profill', ProfileController::class);
+Route::resource('klien', KlienController::class);
+
 
 

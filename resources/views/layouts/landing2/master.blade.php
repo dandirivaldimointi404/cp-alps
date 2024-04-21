@@ -14,6 +14,11 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('landing/assets/css/dashlite.css?ver=3.1.1') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('landing/assets/css/theme.css?ver=3.1.1') }}">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
 
 <body class="nk-body bg-white npc-landing ">
@@ -21,7 +26,7 @@
         <!-- main @s -->
         <div class="nk-main ">
             {{-- @include('layouts.landing2.header') --}}
-            
+
             @yield('content')
 
             @include('layouts.landing2.footer')

@@ -46,8 +46,8 @@
                         </div>
                     </li>
 
+                    <li class="menu-item"><a href="{{ route('klien.index')}}" class="menu-link nav-link">Klien</a></li>
                     <li class="menu-item"><a href="#blog" class="menu-link nav-link">Blog</a></li>
-                    <li class="menu-item"><a href="#klien" class="menu-link nav-link">Klien</a></li>
                     </li>
                     <li class="menu-item"><a href="{{ route('profill.index')}}" class="menu-link nav-link">Profile Kami</a>
                     </li>
