@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Testimoni;
 use Illuminate\Http\Request;
 
 class KlienController extends Controller
@@ -13,7 +14,8 @@ class KlienController extends Controller
      */
     public function index()
     {
-        return view('klien.index');
+        $testimoni = Testimoni::all();
+        return view('klien.index', compact('testimoni'));
     }
 
     /**

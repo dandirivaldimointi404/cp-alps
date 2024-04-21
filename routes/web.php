@@ -5,6 +5,7 @@ use App\Http\Controllers\GovermentDevController;
 use App\Http\Controllers\KlienController;
 use App\Http\Controllers\MobileDevController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TestimoniController;
 use App\Http\Controllers\UmumController;
 use App\Http\Controllers\WebDevController;
 use Illuminate\Support\Facades\Route;
@@ -20,9 +21,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.landing2.master');
-});
+// Route::get('/', function () {
+//     return view('layouts.admin.master');
+// });
 
 // Route::get('/', function () {
 //     return view('layouts.landing.master');
@@ -35,6 +36,9 @@ Route::resource('goverment', GovermentDevController::class);
 Route::resource('umum', UmumController::class);
 Route::resource('profill', ProfileController::class);
 Route::resource('klien', KlienController::class);
+Route::resource('testimoni', TestimoniController::class);
+
+
 
 
 

@@ -136,21 +136,22 @@
 
     <script>
         var map = L.map('map').setView([-2.5489, 118.0149], 5);
-    
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
-    
-        var marker = L.marker([-6.8444, 108.2045]).addTo(map);
-        marker.bindPopup("<img src='{{ asset('landing/images/product/siskada.png')}}'><br><b>Majalengka</b><br>Nama Client: Teddy Joko<br>Projects: Aplikasi SISKADA");
-    
-        map.setView([-6.8444, 108.2045], 12);
-    
+
+        @foreach ($testimoni as $testi)
+            var marker{{ $testi->id }} = L.marker([{{ $testi->latitude }}, {{ $testi->longitude }}]).addTo(map);
+            marker{{ $testi->id }}.bindPopup(
+                "<img src='{{ asset("uploads/{$testi->gambar}") }}'><br><b>{{ $testi->nama_kota }}</b><br>Nama Client: {{ $testi->nama_client }}<br>Projects: {{ $testi->project }}<br>Testimoni: {{ $testi->testimoni }}"
+            );
+        @endforeach
+
+
         map.fitBounds([
             [-11.0, 94.0], // Southwest
             [6.0, 141.0] // Northeast
         ]);
     </script>
-    
-
 @endsection
