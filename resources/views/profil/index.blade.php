@@ -16,7 +16,8 @@
                         <div class="header-caption">
                             <h1 class="header-title">Bantu Bisnis Kamu Lebih Berkembang!</h1>
                             <div class="header-text">
-                                <p>Segera hubungi kami terkait permasalahan yang kamu  hadapi, kami siap membantu bisnis kamu berkembang.</p>
+                                <p>Segera hubungi kami terkait permasalahan yang kamu hadapi, kami siap membantu bisnis kamu
+                                    berkembang.</p>
                             </div>
                             <ul class="header-action btns-inline">
                                 <li><a href="https://wa.me/+6283117927964"
@@ -41,9 +42,8 @@
                 <div class="col-xl-6 col-lg-7 col-md-8">
                     <div class="text-block is-compact">
                         <h2 class="title">Profile Alpsstudio</h2>
-                        <p class="lead">Kami telah membuat lebih dari 100 website untuk klien kami dalam menyelesaikan
-                            masalahnya, kami bantu website anda lebih menarik dan mudah untuk dipahami sehingga target
-                            audien, tidak kebingungan dan bisnis goal anda tercapai.</p>
+                        <p class="lead">ALPSSTUDIO,
+                            merupakan badan usaha yang bergerak dibidang jasa layanan Web Design, App Design serta Pengembangan Software Website & Aplikasi </p>
                     </div>
                 </div><!-- .col -->
                 <div class="col-xl-6 col-lg-5 col-md-4">
@@ -74,8 +74,7 @@
                         <div class="card card-full service service-s4 after-bg-info">
                             <div class="card-inner">
                                 <div>
-                                    <img src="{{ asset('landing/images/websites.png') }}"
-                                        alt="Your SVG Image">
+                                    <img src="{{ asset('landing/images/websites.png') }}" alt="Your SVG Image">
                                 </div>
                                 <div class="service-text">
                                     <h5 class="title text-dark">Pembuatan Website</h5>
@@ -83,7 +82,7 @@
                             </div>
                         </div><!-- .service -->
                     </div><!-- .col -->
-      
+
                     <div class="col-mb-6 col-lg-4">
                         <div class="card card-full service service-s4">
                             <div class="card-inner">
@@ -97,7 +96,7 @@
                             </div><!-- .service -->
                         </div>
                     </div><!-- .col- -->
-                    {{-- <div class="col-mb-6 col-lg-4">
+                    <div class="col-mb-6 col-lg-4">
                         <div class="card card-full service service-s4 after-bg-danger">
                             <div class="card-inner">
                                 <div>
@@ -105,15 +104,15 @@
                                         style="width: auto; height: 162px;">
                                 </div>
                                 <div class="service-text">
-                                    <h5 class="title text-dark">Pembuatan Aplikasi E-Government</h5>
+                                    <h5 class="title text-dark">Pembuatan Web & App Design</h5>
                                 </div>
                             </div>
                         </div><!-- .service -->
-                    </div><!-- .col --> --}}
+                    </div><!-- .col -->
                 </div><!-- .row -->
             </div>
         </div><!-- .container -->
-      </section>
+    </section>
     <section class="section section-cta">
         <div class="container">
             <div class="row">
