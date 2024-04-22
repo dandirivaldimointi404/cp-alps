@@ -4,10 +4,10 @@
 <head>
     <base href="../">
     <meta charset="utf-8">
-    <meta name="author" content="Softnio">
+    <meta name="author" content="alps studio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"content="Software Pengembangan Website & Aplikasi.">
-    <meta name="keywords" content="alpsstudio Software Pengembangan Website & Aplikasi.">
+    <meta name="keywords" content="alpsstudio, alp studio">
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="{{ asset('landing/images/log.png') }}">
     <!-- Page Title  -->
