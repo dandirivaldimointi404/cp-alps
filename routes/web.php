@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GovermentDevController;
 use App\Http\Controllers\KlienController;
 use App\Http\Controllers\MobileDevController;
@@ -36,7 +38,11 @@ Route::resource('goverment', GovermentDevController::class);
 Route::resource('umum', UmumController::class);
 Route::resource('profill', ProfileController::class);
 Route::resource('klien', KlienController::class);
+Route::resource('blog', BlogController::class);
+
+
 Route::resource('testimoni', TestimoniController::class);
+Route::resource('berita', BeritaController::class);
 
 
 

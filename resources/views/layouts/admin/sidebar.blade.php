@@ -15,11 +15,11 @@
                     <a href="{{ route('testimoni.index')}}" class="pc-link"><span class="pc-micon"><i
                                 class="ti ti-dashboard"></i></span><span class="pc-mtext">Testimoni Klien</span></a>
                 </li>
-                {{-- <li class="pc-item">
-                    <a href="analytics.html" class="pc-link"><span class="pc-micon"><i
+                <li class="pc-item">
+                    <a href="{{ route('berita.index')}}" class="pc-link"><span class="pc-micon"><i
                                 class="ti ti-device-analytics"></i></span><span
-                            class="pc-mtext">Analytics</span></a>
-                </li> --}}
+                            class="pc-mtext">Berita</span></a>
+                </li>
 
             </ul>
            

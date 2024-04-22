@@ -7,13 +7,120 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description"
-        content="Software Pengembangan Website & Aplikasi." />
-    <meta name="keywords"
-        content="Software Pengembangan Website & Aplikasi." />
+    <meta name="description" content="Software Pengembangan Website & Aplikasi." />
+    <meta name="keywords" content="Software Pengembangan Website & Aplikasi." />
     <meta name="author" content="CodedThemes" />
 
     <link rel="icon" href="{{ asset('assets_panel/assets/images/log.png') }}" type="image/x-icon" />
+    {{-- <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script> --}}
+    {{-- <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/decoupled-document/ckeditor.js"></script> --}}
+    {{-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> --}}
+
+
+    {{-- <style>
+        .document-editor {
+            border-radius: var(--ck-border-radius);
+            max-height: 700px;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .document-editor__toolbar {
+            z-index: 1;
+            box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.2);
+        }
+
+        .document-editor__toolbar .ck-toolbar {
+            border: 0;
+            border-radius: 0;
+        }
+
+        .document-editor__editable-container {
+            padding: calc(2 * var(--ck-spacing-large));
+            background: rgba(0, 0, 0, 0.05);
+            overflow-y: scroll;
+        }
+
+        .document-editor__editable-container .ck-editor__editable.ck-editor__editable_inline {
+            width: 21cm;
+            min-height: 29.7cm;
+            padding: 1cm 2cm 2cm;
+            border: 1px hsl(0, 0%, 82.7%) solid;
+            border-radius: var(--ck-border-radius);
+            background: white;
+            box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1);
+            margin: 0 auto;
+        }
+
+        .document-editor .ck-content,
+        .document-editor .ck-heading-dropdown .ck-list .ck-button__label {
+            font: 16px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .document-editor .ck-heading-dropdown .ck-list .ck-button__label {
+            line-height: calc(1.7 * var(--ck-line-height-base) * var(--ck-font-size-base));
+            min-width: 6em;
+        }
+
+        .document-editor .ck-heading-dropdown .ck-list .ck-button:not(.ck-heading_paragraph) .ck-button__label {
+            transform: scale(0.8);
+            transform-origin: left;
+        }
+
+        .document-editor .ck-content h2,
+        .document-editor .ck-heading-dropdown .ck-heading_heading1 .ck-button__label {
+            font-size: 2.18em;
+            font-weight: normal;
+        }
+
+        .document-editor .ck-content h2 {
+            line-height: 1.37em;
+            padding-top: 0.342em;
+            margin-bottom: 0.142em;
+        }
+
+        .document-editor .ck-content h3,
+        .document-editor .ck-heading-dropdown .ck-heading_heading2 .ck-button__label {
+            font-size: 1.75em;
+            font-weight: normal;
+            color: hsl(203, 100%, 50%);
+        }
+
+        .document-editor .ck-heading-dropdown .ck-heading_heading2.ck-on .ck-button__label {
+            color: var(--ck-color-list-button-on-text);
+        }
+
+        .document-editor .ck-content h3 {
+            line-height: 1.86em;
+            padding-top: 0.171em;
+            margin-bottom: 0.357em;
+        }
+
+        .document-editor .ck-content h4,
+        .document-editor .ck-heading-dropdown .ck-heading_heading3 .ck-button__label {
+            font-size: 1.31em;
+            font-weight: bold;
+        }
+
+        .document-editor .ck-content h4 {
+            line-height: 1.24em;
+            padding-top: 0.286em;
+            margin-bottom: 0.952em;
+        }
+
+        .document-editor .ck-content p {
+            font-size: 1em;
+            line-height: 1.63em;
+            padding-top: 0.5em;
+            margin-bottom: 1.13em;
+        }
+
+        .document-editor .ck-content blockquote {
+            font-family: Georgia, serif;
+            margin-left: calc(2 * var(--ck-spacing-large));
+            margin-right: calc(2 * var(--ck-spacing-large));
+        }
+    </style> --}}
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
         id="main-font-link" />
@@ -40,6 +147,8 @@
     <link rel="stylesheet" href="{{ asset('assets_panel/assets/css/style.css') }}" id="main-style-link" />
     <link rel="stylesheet" href="{{ asset('assets_panel/assets/css/style-preset.css') }}" id="preset-style-link" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
 </head>
 
 <body>
@@ -189,6 +298,43 @@
     <script src="{{ asset('assets_panel/assets/js/pages/dashboard-default.js') }}"></script>
     <script src="{{ asset('assets_panel/assets/js/plugins/uppy.min.js') }}"></script>
     <script src="{{ asset('assets_panel/assets/js/plugins/choices.min.js') }}"></script>
+
+
+
+    <script src="{{ asset('assets_panel/assets/js/plugins/ckeditor/classic/ckeditor.js') }}"></script>
+    {{-- <script src="{{ asset('assets_panel/assets/js/plugins/ckeditor/document/ckeditor.js') }}"></script> --}}
+    <script>
+        (function() {
+            ClassicEditor.create(document.querySelector('#classic-editor')).catch((error) => {
+                console.error(error);
+            });
+        })();
+    </script>
+
+    {{-- <script>
+        DecoupledEditor
+            .create(document.querySelector('#editor'))
+            .then(editor => {
+                const toolbarContainer = document.querySelector('#toolbar-container');
+
+                toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script> --}}
+
+
+    {{-- <script>
+        (function() {
+            DecoupledEditor.create(document.querySelector('.document-editor__editable'))
+                .then((editor) => {
+                    const toolbarContainer = document.querySelector('.document-editor__toolbar');
+                    toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+                })
+                .catch((error) => {});
+        })();
+    </script> --}}
 </body>
 
 </html>
