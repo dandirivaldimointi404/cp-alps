@@ -7,10 +7,11 @@
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"content="Software Pengembangan Website & Aplikasi.">
+    <meta name="keywords" content="alpsstudio Software Pengembangan Website & Aplikasi.">
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="{{ asset('landing/images/log.png') }}">
     <!-- Page Title  -->
-    <title>Home | Alpsstudio</title>
+    <title>alpsstudio.id | Software Pengembangan Website & Aplikasi</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('landing/assets/css/dashlite.css?ver=3.1.1') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('landing/assets/css/theme.css?ver=3.1.1') }}">
