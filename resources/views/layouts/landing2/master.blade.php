@@ -7,7 +7,7 @@
     <meta name="author" content="alps studio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"content="Software Pengembangan Website & Aplikasi.">
-    <meta name="keywords" content="alpsstudio, alp studio">
+    <meta name="keywords" content="alpsstudio, alp studio, alps studio id">
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="{{ asset('landing/images/log.png') }}">
     <!-- Page Title  -->
@@ -20,7 +20,7 @@
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5253076561571680"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
 </head>
 
