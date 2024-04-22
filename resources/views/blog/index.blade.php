@@ -47,16 +47,15 @@
                     <div class="col-xl-8 col-lg-7 col-md-8">
                         <div class="text-block is-compact">
                             <small class="d-block date text">
-                                <a href="javascript:void(0)"
-                                    class="text-uppercase border-end brd-gray pe-3 me-3 color-blue4 fw-bold">{{ $item->kategori }}</a>
-                                <i class="bi bi-clock me-1"></i>
-                                <a href="javascript:void(0)"
-                                    class="op-8">{{ $item->created_at->subHour()->locale('id')->diffForHumans() }}</a>
+                                <small
+                                    class="text-uppercase border-end brd-gray pe-3 me-3 color-blue4 fw-bold">{{ $item->kategori }}</small>
+                                <small>{{ $item->created_at->subHour()->locale('id')->diffForHumans() }}</small>
                             </small>
-                            <h5 class="title"><a
-                                    href="{{ route('blog.show', ['blog' => $item->id]) }}">{{ $item->judul }}</a></h5>
-                                    {!! Str::limit($item->konten, 250) !!}
+                            <br>
+                            <h5 class="title"><a href="{{ route('blog.show', ['blog' => $item->id]) }}" style="text-decoration: none; color: black;">{{ $item->judul }}</a></h5>
 
+
+                            {!! Str::limit($item->konten, 250) !!}
                         </div>
                     </div><!-- .col -->
                 </div><!-- .row -->
