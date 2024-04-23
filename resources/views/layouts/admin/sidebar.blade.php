@@ -1,8 +1,8 @@
 <nav class="pc-sidebar">
     <div class="navbar-wrapper">
         <div class="m-header">
-            <a href="index.html" class="b-brand">
-                <img src="{{ asset('assets_panel/assets/images/log.png')}}" alt class="logo logo-lg" />
+            <a href="#" class="b-brand">
+                <img src="{{ asset('assets_panel/assets/images/log.png') }}" alt="Logo" class="logo logo-lg img-fluid" style="max-width: 100px; height: auto;" />
             </a>
         </div>
         <div class="navbar-content">

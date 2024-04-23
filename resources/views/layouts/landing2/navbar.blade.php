@@ -2,7 +2,7 @@
     <div class="container header-container">
         <div class="header-wrap">
             <div class="header-logo">
-                <a href="html/index.html" class="logo-link">
+                <a href="#" class="logo-link">
                     <img class="logo-light logo-img" src="{{ asset('landing/images/log.png') }}"
                         srcset="{{ asset('landing/images/log.png') }}" alt="logo">
                     <img class="logo-dark logo-img" src="{{ asset('landing/images/log.png') }}"
