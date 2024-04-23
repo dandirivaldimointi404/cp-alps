@@ -39,10 +39,10 @@ class BeritaController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'gambar' => '',
-            'judul' => '',
-            'konten' => '',
-            'kategori' => '',
+            'gambar' => 'required',
+            'judul' => 'required',
+            'konten' => 'required',
+            'kategori' => 'required',
         ]);
 
         try {
@@ -95,10 +95,10 @@ class BeritaController extends Controller
     public function update(Request $request, $id)
     {
         $validatedData = $request->validate([
-            'gambar' => '',
-            'judul' => '',
-            'konten' => '',
-            'kategori' => '',
+            'gambar' => 'required',
+            'judul' => 'required',
+            'konten' => 'required',
+            'kategori' => 'required',
         ]);
 
         try {

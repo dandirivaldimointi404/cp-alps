@@ -39,13 +39,13 @@ class TestimoniController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'gambar' => '',
-            'nama_kota' => '',
-            'nama_client' => '',
-            'project' => '',
-            'testimoni' => '',
-            'latitude' => '',
-            'longitude' => '',
+            'gambar' => 'required',
+            'nama_kota' => 'required',
+            'nama_client' => 'required',
+            'project' => 'required',
+            'testimoni' => 'required',
+            'latitude' => 'required',
+            'longitude' => 'required',
         ]);
 
         try {
@@ -99,13 +99,13 @@ class TestimoniController extends Controller
     public function update(Request $request, $id_testimoni)
     {
         $validatedData = $request->validate([
-            'gambar' => '',
-            'nama_kota' => '',
-            'nama_client' => '',
-            'project' => '',
-            'testimoni' => '',
-            'latitude' => '',
-            'longitude' => '',
+            'gambar' => 'required',
+            'nama_kota' => 'required',
+            'nama_client' => 'required',
+            'project' => 'required',
+            'testimoni' => 'required',
+            'latitude' => 'required',
+            'longitude' => 'required',
         ]);
 
         try {
