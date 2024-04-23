@@ -11,7 +11,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="{{ asset('landing/images/log.png') }}">
     <!-- Page Title  -->
-    <title>alpsstudio.id | Software Pengembangan Website & Aplikasi</title>
+    <title>alpsstudio.id | Software Pengembangan Website & Aplikasi.</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('landing/assets/css/dashlite.css?ver=3.1.1') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('landing/assets/css/theme.css?ver=3.1.1') }}">
@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5253076561571680"
-    crossorigin="anonymous"></script>
 
 </head>
 
