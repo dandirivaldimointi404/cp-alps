@@ -58,7 +58,7 @@
                     </div><!-- .row -->
                 </div>
 
-                <div class="row flex-row-reverse justify-content-center text-center">
+                <div class="row flex-row-reverse justify-content-center">
                     <div class="col-lg-10 col-md-10">
                         <div class="header-caption">
                             <h2>{{ $blog->judul }}</h2>
