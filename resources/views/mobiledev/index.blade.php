@@ -57,7 +57,6 @@
     <section class="section section-service pt-3">
         <div class="container">
             <div class="row">
-                {{-- <div class="row justify-content-center text-center"> --}}
                 <div class="col-xl-7 col-md-8">
                     <div class="section-head">
                         <h2 class="title text-dark">Layanan</h2>

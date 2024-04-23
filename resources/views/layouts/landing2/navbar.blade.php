@@ -28,8 +28,6 @@
                                         Development</a></li>
                                 <li class="menu-item"><a href="{{ route('mobiledev.index') }}" class="menu-link">Mobile
                                         Development</a></li>
-                                {{-- <li class="menu-item"><a href="{{ route('goverment.index') }}"
-                                        class="menu-link">E-Goverment</a></li> --}}
                             </ul>
                         </div>
                     </li>
@@ -40,8 +38,7 @@
                             <ul class="menu-list">
                                 <li class="menu-item"><a href="{{ route('umum.index') }}" class="menu-link">Umum</a>
                                 </li>
-                                {{-- <li class="menu-item"><a href="html/index-v3.html" class="menu-link">E-Goverment</a>
-                                </li> --}}
+                               
                             </ul>
                         </div>
                     </li>

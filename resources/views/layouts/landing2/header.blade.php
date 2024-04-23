@@ -77,10 +77,6 @@
                   <div class="header-caption">
 
                       <h1 class="header-title">Software Pengembangan Website & Aplikasi</h1>
-                      {{-- <div class="header-text">
-                          <p>Dictum metus id fermentum efficitur. Praesent ultrices justo in feugiat
-                              condimentum. </p>
-                      </div> --}}
                       <ul class="header-action btns-inline">
                           <li><a href="#" class="btn btn-primary btn-lg"><span>Konsultasi</span></a>
                           </li>

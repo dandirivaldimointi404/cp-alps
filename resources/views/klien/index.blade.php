@@ -91,19 +91,6 @@
                             </div><!-- .service -->
                         </div>
                     </div><!-- .col- -->
-                    {{-- <div class="col-mb-6 col-lg-4">
-                        <div class="card card-full service service-s4 after-bg-danger">
-                            <div class="card-inner">
-                                <div>
-                                    <img src="{{ asset('landing/images/gover.png') }}" alt="Your SVG Image"
-                                        style="width: auto; height: 162px;">
-                                </div>
-                                <div class="service-text">
-                                    <h5 class="title text-dark">Pembuatan Aplikasi E-Government</h5>
-                                </div>
-                            </div>
-                        </div><!-- .service -->
-                    </div><!-- .col --> --}}
                 </div><!-- .row -->
             </div>
         </div><!-- .container -->
@@ -150,8 +137,8 @@
 
 
         map.fitBounds([
-            [-11.0, 94.0], // Southwest
-            [6.0, 141.0] // Northeast
+            [-11.0, 94.0], 
+            [6.0, 141.0] 
         ]);
     </script>
 @endsection

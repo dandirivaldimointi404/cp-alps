@@ -10,11 +10,6 @@
                             <div class="page-header-title">
                                 <h5 class="m-b-10">Data Berita</h5>
                             </div>
-                            {{-- <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="../navigation/index.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="javascript: void(0)">Customer</a></li>
-                                <li class="breadcrumb-item" aria-current="page">Customer List</li>
-                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -64,17 +59,6 @@
                                     </div>
                                 </div>
 
-
-                                {{-- <div class="col-lg-12">
-                                    <label class="form-label">Konten</label>
-                                    <input type="text" class="form-control @error('konten') is-invalid @enderror"
-                                        placeholder="Masukkan konten" name="konten" id="konten"
-                                        value="{{ old('konten') }}">
-                                    @error('konten')
-                                        <small id="file-error-msg" class="form-text text-danger">{{ $message }}</small>
-                                    @enderror
-                                </div> --}}
-
                                 <div class="form-group mb-4">
                                     <div class="card">
                                         <label class="form-label">Konten</label>
@@ -83,25 +67,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                {{-- <div class="form-group mb-4">
-                                    <div class="card">
-                                        <label class="form-label">Konten</label>
-                                        <div class="card-body">
-                                            <div class="document-editor">
-                                                <div class="document-editor__toolbar"></div>
-                                                <div class="document-editor__editable-container">
-                                                    <div class="document-editor__editable">
-                                                        
-                                                  
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> --}}
-
-                            
 
                                 <div class="col-12">
                                     <button class="btn btn-primary float-right" type="submit" style="float: right">Simpan Data</button>

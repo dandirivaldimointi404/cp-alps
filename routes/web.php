@@ -23,13 +23,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('layouts.admin.master');
-// });
-
-// Route::get('/', function () {
-//     return view('layouts.landing.master');
-// });
 
 Route::get('/', [BerandaController::class, 'index'])->name('beranda.index');
 Route::resource('webdev', WebDevController::class);
@@ -38,11 +31,15 @@ Route::resource('goverment', GovermentDevController::class);
 Route::resource('umum', UmumController::class);
 Route::resource('profill', ProfileController::class);
 Route::resource('klien', KlienController::class);
-Route::resource('blog', BlogController::class);
-
+Route::resource('blog', BlogController::class)->parameters([
+  'blog' => 'blog:slug',
+]);
 
 Route::resource('testimoni', TestimoniController::class);
-Route::resource('berita', BeritaController::class);
+Route::resource('berita', BeritaController::class)->parameters([
+  'berita' => 'berita:slug',
+]);
+
 
 
 

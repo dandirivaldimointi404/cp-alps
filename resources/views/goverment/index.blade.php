@@ -79,24 +79,6 @@
         </div><!-- .container -->
     </section>
 
-    {{-- <section class="section section-cta">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-7 col-md-8">
-                    <div class="text-block is-compact">
-                        <h2 class="title">Profesional Mobile Developer</h2>
-                        <p class="lead">Selain membuat aplikasi berbasis website, kami juga menyediakan jasa pembuatan aplikasi berbasis mobile Android dan Lintas Platform menggunakan Flutter.</p>
-                    </div>
-                </div><!-- .col -->
-                <div class="col-xl-6 col-lg-5 col-md-4">
-                    <div class="img-block h-80px mb-4 rounded">
-                        <img src="{{ asset('landing/images/Cover.png') }}" class="img-fluid" alt="Your Image">
-                    </div>
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section> --}}
-
     <section class="section section-cta">
         <div class="container">
             <div class="row">

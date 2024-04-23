@@ -18,11 +18,6 @@
                             <div class="page-header-title">
                                 <h5 class="m-b-10">Data Berita</h5>
                             </div>
-                            {{-- <ul class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="../navigation/index.html">Home</a></li>
-                          <li class="breadcrumb-item"><a href="javascript: void(0)">Customer</a></li>
-                          <li class="breadcrumb-item" aria-current="page">Customer List</li>
-                      </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -30,7 +25,6 @@
 
 
             <div class="row">
-
                 <div class="col-sm-12">
                     <div class="card">
                         <div class="card-header">
@@ -74,14 +68,14 @@
                                                 <td>{{ $item->created_at }}</td>
 
                                                 <td class="text-center">
-                                                    <form action="{{ route('berita.destroy', $item->id) }}"
-                                                        method="POST" class="delete-form">
-                                                        <a href="{{ route('berita.edit', $item->id) }}"
+                                                    <form action="{{ route('berita.destroy', $item->slug) }}" method="POST"
+                                                        class="delete-form">
+                                                        <a href="{{ route('berita.edit', $item->slug) }}"
                                                             class="btn btn-outline-primary"><i class="ti ti-edit"></i></a>
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-outline-danger"
-                                                            data-id="{{ $item->id }}"><i
+                                                            data-id="{{ $item->slug }}"><i
                                                                 class="ti ti-trash"></i></button>
                                                     </form>
                                                 </td>
@@ -93,9 +87,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 @endsection

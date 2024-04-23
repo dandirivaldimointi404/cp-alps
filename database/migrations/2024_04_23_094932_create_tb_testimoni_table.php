@@ -13,13 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tb_blog', function (Blueprint $table) {
-            $table->id();
+        Schema::create('tb_testimoni', function (Blueprint $table) {
+            $table->bigIncrements('id_testimoni');
             $table->string('gambar');
-            $table->string('slug');
-            $table->string('judul');
-            $table->text('konten');
-            $table->string('kategori');
+            $table->string('nama_kota');
+            $table->string('nama_client');
+            $table->string('project');
+            $table->text('testimoni');
+            $table->string('latitude');
+            $table->string('longitude');
             $table->timestamps();
         });
     }
@@ -31,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tb_blog');
+        Schema::dropIfExists('tb_testimoni');
     }
 };

@@ -26,7 +26,6 @@
     <div class="nk-app-root">
         <!-- main @s -->
         <div class="nk-main ">
-            {{-- @include('layouts.landing2.header') --}}
 
             @yield('content')
 

@@ -39,10 +39,10 @@ class BeritaController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'gambar' => 'required',
-            'judul' => 'required',
-            'konten' => 'required',
-            'kategori' => 'required',
+            'gambar' => '',
+            'judul' => '',
+            'konten' => '',
+            'kategori' => '',
         ]);
 
         try {
@@ -80,9 +80,9 @@ class BeritaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $beritum)
+    public function edit(Blog $berita)
     {
-        return view('berita.edit', compact('beritum'));
+        return view('berita.edit', compact('berita'));
     }
 
     /**
@@ -95,7 +95,7 @@ class BeritaController extends Controller
     public function update(Request $request, $id)
     {
         $validatedData = $request->validate([
-            'gambar' => 'required',
+            'gambar' => '',
             'judul' => 'required',
             'konten' => 'required',
             'kategori' => 'required',
@@ -126,10 +126,10 @@ class BeritaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($slug)
     {
         try {
-            $berita = Blog::findOrFail($id);
+            $berita = Blog::findOrFail($slug);
 
             if ($berita->gambar) {
                 Storage::disk('public')->delete($berita->gambar);

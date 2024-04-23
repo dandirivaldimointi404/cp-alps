@@ -43,67 +43,6 @@
 
     </header>
 
-
-
-    {{-- <section class="section section-service pt-5" id="feature">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7 col-md-8">
-                    <div class="section-head">
-                        <h2 class="title text-dark">Daftar Aplikasi</h2>
-                        <p>Berikut daftar aplikasi yang kami miliki untuk anda dapat pesan</p>
-                    </div><!-- .section-head -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-            <div class="section-content">
-                <div class="row gy-gs justify-content-center text-center">
-                    <div class="col-mb-6 col-lg-4">
-                        <div class="card card-full service service-s4 after-bg-info">
-                            <div class="card-inner">
-                                <div>
-                                    <img src="{{ asset('landing/images/websites.png') }}" alt="Your SVG Image">
-                                </div>
-                                <div class="service-text">
-                                    <h5 class="title text-dark">Company Profile</h5>
-                                    <p>Buat website perusahaan kamu lebih menarik dan responsif.</p>
-                                </div>
-                            </div>
-                        </div><!-- .service -->
-                    </div><!-- .col -->
-
-                    <div class="col-mb-6 col-lg-4">
-                        <div class="card card-full service service-s4">
-                            <div class="card-inner">
-                                <div>
-                                    <img src="{{ asset('landing/images/mobile.png') }}" alt="Your SVG Image"
-                                        style="width: auto; height: 162px;">
-                                </div>
-                                <div class="service-text">
-                                    <h5 class="title text-dark">Landing Page</h5>
-                                    <p>Buat landing page untuk kebutuhan iklan, maupun untuk menarik perhatian pelanggan.
-                                    </p>
-                                </div>
-                            </div><!-- .service -->
-                        </div>
-                    </div><!-- .col- -->
-                    <div class="col-mb-6 col-lg-4">
-                        <div class="card card-full service service-s4 after-bg-danger">
-                            <div class="card-inner">
-                                <div>
-                                    <img src="{{ asset('landing/images/gover.png') }}" alt="Your SVG Image"
-                                        style="width: auto; height: 162px;">
-                                </div>
-                                <div class="service-text">
-                                    <h5 class="title text-dark">Web Apps</h5>
-                                </div>
-                            </div>
-                        </div><!-- .service -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div>
-        </div><!-- .container -->
-    </section> --}}
-
     <section class="section section-dashboard" id="previews">
         <div class="container">
             <div class="row">
