@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+
 
 </head>
 
@@ -37,6 +39,8 @@
     <!-- JavaScript -->
     <script src="{{ asset('landing/assets/js/bundle.js?ver=3.1.1') }}"></script>
     <script src="{{ asset('landing/assets/js/scripts.js?ver=3.1.1') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 
 </html>
