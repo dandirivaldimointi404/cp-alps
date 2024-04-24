@@ -6,20 +6,19 @@
     <meta charset="utf-8">
     <meta name="author" content="alps studio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"content="Software Pengembangan Website & Aplikasi.">
     <meta name="keywords" content="alpsstudio, alp studio, alps studio id">
     <!-- Fav Icon  -->
+    
+    <title>@yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('landing/images/log.png') }}">
-    <!-- Page Title  -->
-    <title>alpsstudio.id | Software Pengembangan Website & Aplikasi.</title>
+    <meta name="description"content="Software Pengembangan Website & Aplikasi.">
+
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('landing/assets/css/dashlite.css?ver=3.1.1') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('landing/assets/css/theme.css?ver=3.1.1') }}">
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  
 
 
 </head>
@@ -40,7 +39,7 @@
     <script src="{{ asset('landing/assets/js/bundle.js?ver=3.1.1') }}"></script>
     <script src="{{ asset('landing/assets/js/scripts.js?ver=3.1.1') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
 
 </html>

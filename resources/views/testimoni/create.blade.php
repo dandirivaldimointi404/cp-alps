@@ -73,7 +73,7 @@
                                     <div class="col-lg-6">
                                         <label class="form-label">Testimoni</label>
                                         <input type="text" class="form-control @error('testimoni') is-invalid @enderror"
-                                            placeholder="Masukan Testimoni" name="testimoni" id="nama_client"
+                                            placeholder="Masukan Testimoni" name="testimoni" id="testimoni"
                                             value="{{ old('testimoni') }}">
                                         @error('testimoni')
                                             <small id="file-error-msg" class="form-text text-danger">{{ $message }}</small>
@@ -96,7 +96,7 @@
                                     <div class="col-lg-6">
                                         <label class="form-label">Longitude</label>
                                         <input type="text" class="form-control @error('longitude') is-invalid @enderror"
-                                            placeholder="Masukan Longitude" name="longitude" id="nama_client"
+                                            placeholder="Masukan Longitude" name="longitude" id="longitude"
                                             value="{{ old('longitude') }}">
                                         @error('longitude')
                                             <small id="file-error-msg"
@@ -105,7 +105,11 @@
                                     </div>
                                 </div>
 
+                                <div class="col-md-12">
+                                    <div id="map" style="height: 400px;"></div>
+                                </div>
 
+                                <br>
 
                                 <div class="col-12">
                                     <button class="btn btn-primary" type="submit" style="float: right;">Simpan
@@ -118,4 +122,58 @@
             </div>
         </div>
     </div>
+
+
+    {{-- <script>
+        var map = L.map('map').setView([-2.5489, 118.0149], 5);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        map.fitBounds([
+            [-11.0, 94.0],
+            [6.0, 141.0]
+        ]);
+
+        const search = new GeoSearch.GeoSearchControl({
+            provider: new GeoSearch.OpenStreetMapProvider(),
+            style: 'bar',
+        });
+
+        map.addControl(search);
+
+        map.on('click', function(event) {
+            var latitude = event.latlng.lat;
+            var longitude = event.latlng.lng;
+
+            document.getElementById('latitude').value = latitude;
+            document.getElementById('longitude').value = longitude;
+
+            if (typeof marker !== 'undefined') {
+                map.removeLayer(marker);
+            }
+
+            marker = L.marker([latitude, longitude]).addTo(map);
+        });
+
+        search.on('geosearch/showlocation', function(event) {
+            var latitude = event.location.y;
+            var longitude = event.location.x;
+
+            document.getElementById('latitude').value = latitude;
+            document.getElementById('longitude').value = longitude;
+
+            document.getElementById('latitudeDisplay').innerText = latitude;
+            document.getElementById('longitudeDisplay').innerText = longitude;
+
+            if (marker) {
+                map.removeLayer(marker);
+            }
+
+            marker = L.marker([latitude, longitude]).addTo(map);
+
+            map.setView([latitude, longitude], 12);
+        });
+    </script> --}}
 @endsection

@@ -1,11 +1,12 @@
 @extends('layouts.landing2.master')
 
-<meta property="og:title" content="{{ $blog->judul }}">
+{{-- <meta property="og:title" content="{{ $blog->judul }}"> --}}
 <meta property="og:description" content="{{ $blog->deskripsi }}">
 <meta property="og:image" content="{{ asset('uploads/' . $blog->gambar) }}">
 <meta property="og:url" content="{{ url()->current() }}">
 <meta property="og:type" content="article">
 
+@section('title', '{{ $blog->judul }}')
 
 <style>
     .rounded img {

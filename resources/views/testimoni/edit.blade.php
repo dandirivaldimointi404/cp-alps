@@ -37,14 +37,15 @@
                                     @error('gambar')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
-                                
-                                    @if($testimoni->gambar)
+
+                                    @if ($testimoni->gambar)
                                         <div class="col-lg-12 mt-2">
-                                            <a href="{{ asset('uploads/'.$testimoni->gambar) }}" target="_blank" class="btn btn-sm btn-primary">Lihat Gambar</a>
+                                            <a href="{{ asset('uploads/' . $testimoni->gambar) }}" target="_blank"
+                                                class="btn btn-sm btn-primary">Lihat Gambar</a>
                                         </div>
                                     @endif
                                 </div>
-                                
+
 
 
                                 <div class="form-group row mb-3">
@@ -115,7 +116,11 @@
                                     </div>
                                 </div>
 
+                                <div class="col-md-12">
+                                    <div id="map" style="height: 400px;"></div>
+                                </div>
 
+                                <br>
 
                                 <div class="col-12">
                                     <button class="btn btn-primary" type="submit" style="float: right;">Simpan
@@ -128,4 +133,7 @@
             </div>
         </div>
     </div>
+
+
+   
 @endsection

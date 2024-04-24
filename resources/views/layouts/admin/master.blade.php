@@ -27,6 +27,17 @@
     <link rel="stylesheet" href="{{ asset('assets_panel/assets/css/style-preset.css') }}" id="preset-style-link" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="
+            https://cdn.jsdelivr.net/npm/leaflet-geosearch@3.11.1/dist/bundle.min.js
+            "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/leaflet-geosearch@3.11.1/dist/geosearch.min.css
+    "
+        rel="stylesheet">
+
 
 </head>
 
@@ -73,6 +84,59 @@
                 console.error(error);
             });
         })();
+    </script>
+
+    <script>
+        var map = L.map('map').setView([-2.5489, 118.0149], 5);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        map.fitBounds([
+            [-11.0, 94.0],
+            [6.0, 141.0]
+        ]);
+
+        const search = new GeoSearch.GeoSearchControl({
+            provider: new GeoSearch.OpenStreetMapProvider(),
+            style: 'bar',
+        });
+
+        map.addControl(search);
+
+        map.on('click', function(event) {
+            var latitude = event.latlng.lat;
+            var longitude = event.latlng.lng;
+
+            document.getElementById('latitude').value = latitude;
+            document.getElementById('longitude').value = longitude;
+
+            if (typeof marker !== 'undefined') {
+                map.removeLayer(marker);
+            }
+
+            marker = L.marker([latitude, longitude]).addTo(map);
+        });
+
+        search.on('geosearch/showlocation', function(event) {
+            var latitude = event.location.y;
+            var longitude = event.location.x;
+
+            document.getElementById('latitude').value = latitude;
+            document.getElementById('longitude').value = longitude;
+
+            document.getElementById('latitudeDisplay').innerText = latitude;
+            document.getElementById('longitudeDisplay').innerText = longitude;
+
+            if (marker) {
+                map.removeLayer(marker);
+            }
+
+            marker = L.marker([latitude, longitude]).addTo(map);
+
+            map.setView([latitude, longitude], 12);
+        });
     </script>
 
 </body>
