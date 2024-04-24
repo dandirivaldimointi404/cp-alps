@@ -8,10 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="alpsstudio, alp studio, alps studio id">
     <!-- Fav Icon  -->
-    
+
     <title>@yield('title')</title>
-    <link rel="shortcut icon" href="{{ asset('landing/images/log.png') }}">
-    <meta name="description"content="Software Pengembangan Website & Aplikasi.">
+    <link rel="shortcut icon" href="@yield('favicon')">
+    {{-- <meta name="description"content="Software Pengembangan Website & Aplikasi."> --}}
+
+    <meta property="og:title" content="@yield('title')">
+    <meta property="og:description" content="@yield('deskripsi')">
+    <meta property="og:image" content="@yield('favicon')">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="article">
 
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('landing/assets/css/dashlite.css?ver=3.1.1') }}">
