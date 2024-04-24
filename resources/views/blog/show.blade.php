@@ -6,7 +6,7 @@
 <meta property="og:url" content="{{ url()->current() }}">
 <meta property="og:type" content="article">
 
-@section('title', '{{ $blog->judul }}')
+@section('title', $blog->judul)
 
 <style>
     .rounded img {
