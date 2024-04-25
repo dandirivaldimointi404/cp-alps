@@ -39,9 +39,9 @@
                                         @foreach ($chunk as $item)
                                             <div class="col-3">
                                                 <div class="review">
-                                                    <div class="review-brand rounded-4">
+                                                    <div class="review-brand">
                                                         <img src="{{ asset('uploads/' . $item->gambar) }}" alt=""
-                                                            style="max-width: 100%; max-height: 100%;" class="rounded-5">
+                                                            style="max-width: 100%; max-height: 100%;" class="rounded-4">
                                                     </div>
                                                     <small>{{ $item->kategori }}</small>
                                                     <br>
