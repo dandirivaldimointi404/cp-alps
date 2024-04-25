@@ -39,7 +39,7 @@
                                         @foreach ($chunk as $item)
                                             <div class="col-3">
                                                 <div class="review">
-                                                    <div class="review-brand rounded-5">
+                                                    <div class="review-brand rounded-4">
                                                         <img src="{{ asset('uploads/' . $item->gambar) }}" alt=""
                                                             style="max-width: 100%; max-height: 100%;" class="rounded-5">
                                                     </div>
