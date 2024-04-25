@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Login | SMK APP</title>
+    <title>ALPSSTUDIO</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-        content="Berry is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
+        content="Software Pengembangan Website & Aplikasi.">
     <meta name="keywords"
-        content="Berry, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Bootstrap Admin Template">
-    <meta name="author" content="CodedThemes">
+        content="Software Pengembangan Website & Aplikasi.">
+    <meta name="author" content="alpsstudio">
 
     <link rel="icon" href="{{ asset('assets_panel/assets/images/favicon.svg') }}" type="image/x-icon">
 
