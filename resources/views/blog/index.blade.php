@@ -3,7 +3,7 @@
 @section('styles')
     <style>
         .rounded img {
-            border-radius: 10px;
+            border-radius: 15px;
         }
     </style>
 @endsection
@@ -19,7 +19,7 @@
                             @php
                                 $postBlog = $blog->last();
                             @endphp
-                            <div class="img-block mb-4 rounded" style="max-width: 100%; overflow: hidden; height: 200px;">
+                            <div class="img-block mb-4 rounded-4" style="max-width: 100%; overflow: hidden;">
                                 <img src="{{ asset('uploads/' . $postBlog->gambar) }}" class="img-fluid" alt="Your Image"
                                     style="width: 100%; height: auto;">
                             </div>
@@ -39,9 +39,9 @@
                                         @foreach ($chunk as $item)
                                             <div class="col-3">
                                                 <div class="review">
-                                                    <div class="review-brand rounded">
+                                                    <div class="review-brand rounded-5">
                                                         <img src="{{ asset('uploads/' . $item->gambar) }}" alt=""
-                                                            style="max-width: 100%; max-height: 100%;">
+                                                            style="max-width: 100%; max-height: 100%;" class="rounded-5">
                                                     </div>
                                                     <small>{{ $item->kategori }}</small>
                                                     <br>

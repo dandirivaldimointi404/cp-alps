@@ -135,7 +135,7 @@
   --bs-border-radius-sm: 3px;
   --bs-border-radius-lg: 5px;
   --bs-border-radius-xl: 8px;
-  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-2xl: 0.5rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #798bff;
   --bs-link-hover-color: #465fff;
