@@ -4,7 +4,10 @@
 
 @section('title', $blog->judul)
 @section('favicon', asset('uploads/' . $blog->gambar))
-@section('deskripsi', $blog->konten)
+@section('deskripsi')
+    {!! $blog->konten !!}
+@endsection
+
 
 
 <style>
