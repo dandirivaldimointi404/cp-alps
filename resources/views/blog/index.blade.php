@@ -24,9 +24,9 @@
                                     style="width: 100%; height: auto;">
                             </div>
                             <small>{{ $postBlog->kategori }}</small>
-                            <h5 class="title"><a href="{{ route('blog.show', $postBlog->slug) }}"
+                            <h3 class="title"><a href="{{ route('blog.show', $postBlog->slug) }}"
                                     style="text-decoration: none; color: rgb(255, 255, 255);">{{ $postBlog->judul }}</a>
-                            </h5>
+                            </h3>
                         </div><!-- .header-caption -->
                     </div><!-- .col -->
 
@@ -39,15 +39,14 @@
                                         @foreach ($chunk as $item)
                                             <div class="col-3">
                                                 <div class="review">
-                                                    <div class="review-brand">
-                                                        <img src="{{ asset('uploads/' . $item->gambar) }}" alt=""
-                                                            style="max-width: 100%; max-height: 100%;" class="rounded-4">
+                                                    <div class="review-brand" style="height: 50px; width: auto">
+                                                        <img src="{{ asset('uploads/' . $item->gambar) }}" alt="img-artikel" class="rounded-4">
                                                     </div>
                                                     <small>{{ $item->kategori }}</small>
                                                     <br>
-                                                    <small class="fw-bold"><a href="{{ route('blog.show', $item->slug) }}"
+                                                    <h6 class="fw-bold"><a href="{{ route('blog.show', $item->slug) }}"
                                                         style="text-decoration: none; color: rgb(255, 255, 255);">{{ Str::limit($item->judul, 50) }}</a>
-                                                </small>
+                                                </h6>
                                                 </div>
                                             </div>
                                         @endforeach

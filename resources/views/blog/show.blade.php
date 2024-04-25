@@ -4,7 +4,7 @@
 
 @section('title', $blog->judul)
 @section('favicon', asset('uploads/' . $blog->gambar))
-@section('deskripsi', !!$blog->konten!!)
+@section('deskripsi', $blog->konten)
 
 
 <style>
@@ -27,7 +27,7 @@
                     <div class="row flex-row-reverse justify-content-center">
                         <div class="col-lg-10 col-md-10 align-items-center">
                             <div class="header-caption">
-                                <h4>{{ $blog->judul }}</h4>
+                                <h2>{{ $blog->judul }}</h2>
                                 <small>{{ $blog->created_at }}</small>
                                 <div style="float: right">
                                     <a href="https://api.whatsapp.com/send/?text={{ url()->current() }}">
