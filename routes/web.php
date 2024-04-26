@@ -42,6 +42,10 @@ Route::resource('blog', BlogController::class)->parameters([
   'blog' => 'blog:slug',
 ]);
 
+// Route::middleware(['web', 'track.pengunjung'])->group(function () {
+//   Route::resource('blog', BlogController::class);
+// });
+
 Route::middleware('auth')->group(function () {
   Route::resource('testimoni', TestimoniController::class);
   Route::resource('berita', BeritaController::class)->parameters([

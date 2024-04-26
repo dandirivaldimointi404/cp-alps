@@ -15,53 +15,50 @@
     .rata-kanan {
         text-align: justify;
     }
+
+    .text-right {
+        display: flex;
+        justify-content: flex-end;
+    }
 </style>
 
 @section('content')
     @include('layouts.landing2.navbar')
 
-    <section class="section section-service justify-content-center">
-        <div class="container col-lg-10">
+    <section class="section section-service justify-content-start">
+        <div class="container col-lg-8">
             <div class="row">
                 <div class="section-content">
-                    <div class="row flex-row-reverse justify-content-center">
-                        <div class="col-lg-10 col-md-10 align-items-center">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-10 col-md-10 align-items-start">
                             <div class="header-caption">
                                 <h2>{{ $blog->judul }}</h2>
                                 <small>{{ $blog->created_at }}</small>
                                 <div style="float: right">
+                                    {{-- <p>{{ $kunjungan }}</p> --}}
                                     <a href="https://api.whatsapp.com/send/?text={{ url()->current() }}">
                                         <img src="{{ asset('landing/images/whatsapp.png') }}" alt="WhatsApp"
-                                        class="whatsapp-icon" style="width: 25px; height: auto;">
+                                            class="whatsapp-icon" style="width: 25px; height: auto;">
                                     </a>
                                     <button onclick="copyURL()" class="btn btn-round btn-warning">Salin Link</button>
                                 </div>
                             </div><!-- .header-caption -->
                         </div>
-                        
+
                     </div><!-- .row -->
                     <br>
-                    <div class="row gy-gs justify-content-center text-center">
+                    <div class="row  justify-content-start text-center">
                         <div class="col-lg-10 mb-n3 mb-lg-0">
-                            <div class="img-block h-120px mb-4 rounded">
+                            <div class="img-block h-120px mb-4 rounded"
+                                style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
                                 <img src="{{ asset('uploads/' . $blog->gambar) }}" alt="">
                             </div>
                         </div><!-- .col- -->
-                        {{-- <div class="col-mb-6 col-lg-6">
-                            <div class="card">
-                                <div>
-                                    <div class="img-block h-120px mb-4 rounded">
-                                        <img src="{{ asset('uploads/' . $blog->gambar) }}" class="img-fluid"
-                                            alt="Your Image">
-                                    </div>
-                                </div><!-- .service -->
-                            </div>
-                        </div><!-- .col --> --}}
                     </div><!-- .row -->
                 </div>
                 <br>
-                <div class="row flex-row-reverse justify-content-center">
-                    <div class="col-lg-10 col-md-10">
+                <div class="row justify-content-start">
+                    <div class="col-lg-9 col-md-10">
                         <div class="header-caption">
                             <div class="header-text">
                                 <p class="rata-kanan">{!! $blog->konten !!}</p>
@@ -69,13 +66,94 @@
                         </div><!-- .header-caption -->
                     </div><!-- .col -->
                 </div><!-- .row -->
-
             </div><!-- .row -->
-
         </div><!-- .container -->
-
-
     </section>
+
+
+    <section class="section section-cta">
+        <div class="container">
+            <h3 class="title text-dark">Artikel Terkait</h3>
+            <br>
+            <div class="row">
+                @foreach ($terkait->chunk(2) as $chunk)
+                    @foreach ($chunk as $item)
+                        {{-- <div class="row flex-row-reverse align-items-center justify-content-between g-gs"> --}}
+                        <div class="col-lg-6">
+                            <div class="text-block">
+                                <div class="g-gs">
+                                    <div class="service service-s3">
+                                        <div class="col-xl-4 col-lg-5 col-md-4">
+                                            <div class="img-block h-80px mb-4 rounded">
+                                                <img src="{{ asset('uploads/' . $item->gambar) }}" class="img-fluid"
+                                                    alt="Your Image"
+                                                    style="width: 200px; height: 150px; object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="service-text p-2 col-xl-8 col-lg-5 col-md-4">
+                                            <small class="d-block date text">
+                                                <small
+                                                    class="text-uppercase border-end brd-gray pe-3 me-3 color-blue4 fw-bold">{{ $item->kategori }}</small>
+                                                <small>{{ $item->created_at->subHour()->locale('id')->diffForHumans() }}</small>
+                                            </small>
+                                            <small class="fw-bold"><a href="{{ route('blog.show', $item->slug) }}"
+                                                    style="text-decoration: none; color: black;">{{ $item->judul }}</a>
+                                            </small>
+                                        </div>
+                                    </div><!-- .service -->
+                                </div>
+                            </div><!-- .text-block -->
+                            <hr>
+                        </div><!-- .col -->
+                        {{-- </div><!-- .row --> --}}
+                    @endforeach
+                @endforeach
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section>
+
+    <section class="section section-comments">
+        <div class="container">
+            <h3 class="title text-dark">Komentar</h3>
+            <form action="" method="POST">
+                @csrf
+                {{-- <div class="mb-3">
+                    <label for="name" class="form-label">Nama:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div> --}}
+                <div class="mb-3">
+                    <label for="comment" class="form-label"></label>
+                    <textarea class="form-control" id="comment" name="comment" rows="3" required placeholder="Tulis Komentar"></textarea>
+                </div>
+                <div class="text-right"> <!-- Wrapper div -->
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+            </form>
+            <hr>
+            <div class="comments">
+                <div class="col-12">
+                    <div class="card service service-inline ">
+                        <div class="card-inner">
+                            <div class="service-icon rounded">
+                                <img src="{{ asset('uploads/' . $item->gambar) }}" class="img-fluid"
+                                alt="Your Image"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                            </div>
+                            <div class="service-text">
+                                <h6 class="title">dandi rivaldi</h6>
+                                <p>pemerintahan yang baik akan menghasilkan hasil yang baik dibidang apapun, mulai dari ekonomi bahkan sampai ke olah raga. untungnya rakyat indonesia tidak salah pilih seperti sebagain warga jakarta dan depok.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+    </section>
+
 
     <section class="section section-cta">
         <div class="container">

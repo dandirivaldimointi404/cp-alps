@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Pengunjung;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -47,9 +48,11 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        return view('blog.show', compact('blog'));
+        $terkait = Blog::all();    
+        $kunjungan = Pengunjung::where('blog_id', $blog->id)->count();
+        return view('blog.show', compact('blog', 'terkait', 'kunjungan'));
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
