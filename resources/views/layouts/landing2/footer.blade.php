@@ -12,6 +12,7 @@
                     <ul class="social social-primary">
                         <li><a href="https://wa.me/+6283117927964"><em class="icon ni ni-whatsapp"></em></a></li>
                         <li><a href="https://www.instagram.com/alp.sstudio/"><em class="icon ni ni-instagram"></em></a></li>
+                        <li><a href="https://www.tiktok.com/@alpsstudio.id"><em class="icon ni ni-tiktok"></em></a></li>
                     </ul>
                 </div><!-- .widget -->
             </div><!-- .col -->

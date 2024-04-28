@@ -34,7 +34,7 @@
                                     </h3>
                                 </div>
                             </div>
-                        </div><!-- .header-caption -->
+                        </div>
                     </div>
 
 
@@ -57,7 +57,7 @@
                     <div class="slider">
                         @foreach ($blog as $item)
                             <div class="slide">
-                                <div class="row">
+                                <div class="row flex-row-reverse justify-content-center g-gs">
                                     <div class="col-11">
                                         <div class="review">
                                             <div class="review-brand">
@@ -235,13 +235,14 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="path/to/slick.min.js"></script>
+    
     <script>
         $(document).ready(function() {
             $('.slider').slick({
                 arrows: true,
                 prevArrow: '<button type="button" class="slick-prev"><i class="icon ni ni-arrow-left-round-fill"></i></button>',
                 nextArrow: '<button type="button" class="slick-next"><i class="icon ni ni-arrow-right-round-fill"></i></button>',
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 1000,

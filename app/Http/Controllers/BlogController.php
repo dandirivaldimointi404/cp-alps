@@ -48,7 +48,7 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        $terkait = Blog::all();    
+        $terkait = Blog::paginate(3);    
         $kunjungan = Pengunjung::where('blog_id', $blog->id)->count();
         return view('blog.show', compact('blog', 'terkait', 'kunjungan'));
     }
