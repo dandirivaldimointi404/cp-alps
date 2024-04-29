@@ -95,12 +95,14 @@
                             <div class="row justify-content-start">
                                 <div class="col-lg-12 col-md-12">
                                     <div class="header-caption">
-                                        <div class="header-text">
+                                        <div class="header-text" id="content-container">
                                             <p class="rata-kanan">{!! $blog->konten !!}</p>
                                         </div>
                                     </div><!-- .header-caption -->
                                 </div><!-- .col -->
                             </div><!-- .row -->
+
+
                         </div><!-- .col -->
 
                         <div class="col-lg-3 col-md-3 p-2 justify-items-end">
@@ -293,5 +295,15 @@
         }
 
         showPopupAfterDelay();
+
+        var contentContainer = document.getElementById("content-container");
+        var paragraphs = contentContainer.getElementsByTagName("p");
+        if (paragraphs.length >= 2) {
+            var secondParagraph = paragraphs[1];
+            var iklan = document.createElement("div");
+            iklan.innerHTML =
+                '<div class="iklan"><a href="https://atid.me/adv.php?rk=00a0ix002d8h" target="_blank"><img src="https://imp.accesstra.de/img.php?rk=00a0ix002d8h" border="0"/></a></div>';
+            contentContainer.insertBefore(iklan, secondParagraph.nextSibling);
+        }
     </script>
 @endsection
