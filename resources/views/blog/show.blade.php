@@ -302,7 +302,7 @@
             var secondParagraph = paragraphs[1];
             var iklan = document.createElement("div");
             iklan.innerHTML =
-                '<div class="iklan"><a href="https://atid.me/adv.php?rk=00a0ix002d8h" target="_blank"><img src="https://imp.accesstra.de/img.php?rk=00a0ix002d8h" border="0"/></a></div>';
+                '<div class="iklan p-2"><a href="https://atid.me/adv.php?rk=00a0ix002d8h" target="_blank"><img src="https://imp.accesstra.de/img.php?rk=00a0ix002d8h" border="0"/></a></div>';
             contentContainer.insertBefore(iklan, secondParagraph.nextSibling);
         }
     </script>
