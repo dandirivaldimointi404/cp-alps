@@ -297,13 +297,23 @@
         showPopupAfterDelay();
 
         var contentContainer = document.getElementById("content-container");
+        var content = contentContainer.innerHTML;
         var paragraphs = contentContainer.getElementsByTagName("p");
-        if (paragraphs.length >= 2) {
-            var secondParagraph = paragraphs[1];
-            var iklan = document.createElement("div");
-            iklan.innerHTML =
-                '<div class="iklan p-2"><a href="https://atid.me/adv.php?rk=00a0ix002d8h" target="_blank"><img src="https://imp.accesstra.de/img.php?rk=00a0ix002d8h" border="0"/></a></div>';
-            contentContainer.insertBefore(iklan, secondParagraph.nextSibling);
+
+        // Menentukan titik sisipan iklan
+        var insertionPoint;
+        if (paragraphs.length > 0) {
+            var midIndex = Math.ceil(paragraphs.length / 2);
+            insertionPoint = paragraphs[midIndex - 1];
+        } else {
+            // Jika tidak ada paragraf, sisipkan di akhir konten
+            insertionPoint = contentContainer;
         }
+
+        // Menyisipkan iklan
+        var iklan = document.createElement("div");
+        iklan.innerHTML =
+            '<div class="iklan"><a href="https://atid.me/adv.php?rk=00a0ix002d8h" target="_blank"><img src="https://imp.accesstra.de/img.php?rk=00a0ix002d8h" border="0" /></a></div>';
+        contentContainer.insertBefore(iklan, insertionPoint.nextSibling);
     </script>
 @endsection
