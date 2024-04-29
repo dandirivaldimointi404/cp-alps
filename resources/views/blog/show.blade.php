@@ -63,10 +63,12 @@
                                             class="facebook-icon" style="width: 25px; height: auto;">
                                     </a>
 
-                                    <a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}" target="_blank">
-                                        <img src="{{ asset('landing/images/twitter.png') }}" alt="Twitter" class="twitter-icon" style="width: 25px; height: auto;">
+                                    <a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}"
+                                        target="_blank">
+                                        <img src="{{ asset('landing/images/twitter.png') }}" alt="Twitter"
+                                            class="twitter-icon" style="width: 25px; height: auto;">
                                     </a>
-                                    
+
                                     <button onclick="copyURL()" class="btn btn-round btn-warning">Salin Link</button>
                                 </div>
                             </div><!-- .header-caption -->
@@ -86,21 +88,9 @@
                                 </div><!-- .col- -->
                             </div><!-- .row -->
                             <p></p>
-                            <img src="path_to_your_ad_image.jpg" alt="Iklan" width="830" height="90"
-                                class="image-fluid">
 
-                                <script type="text/javascript">
-                                    var atid = "bugu4m110465",
-                                        atvalid = "https://s.lazada.co.id|https://www.lazada.co.id/|https://pages.lazada.co.id/",
-                                        timestamp = new Date().getTime(),
-                                        path = "https://accesstrade.co.id";
-                                    ! function(e) {
-                                        var t = e.createElement("script");
-                                        t.src = path + "/smart_link_at.js?cb=" + timestamp, t.async = !0;
-                                        var a = e.getElementsByTagName("script")[0];
-                                        a.parentNode.insertBefore(t, a)
-                                    }(document);
-                                </script>
+                            <a href="https://atid.me/adv.php?rk=00go0e002d8h" target="_blank"><img
+                                    src="https://imp.accesstra.de/img.php?rk=00go0e002d8h" border="0" /></a>
 
                             <div class="row justify-content-start">
                                 <div class="col-lg-12 col-md-12">
@@ -116,7 +106,8 @@
                         <div class="col-lg-3 col-md-3 p-2 justify-items-end">
                             <div class="sidebar">
                                 <article>
-                                    <img src="path_to_your_ad_image.jpg" alt="Iklan" width="220" height="220">
+                                    <a href="https://atid.me/adv.php?rk=00f4ya002d8h" target="_blank"><img
+                                            src="https://imp.accesstra.de/img.php?rk=00f4ya002d8h" border="0" /></a>
                                     <div class="container">
                                         <br>
                                         <h3 class="title text-dark">Artikel Terkait</h3>
