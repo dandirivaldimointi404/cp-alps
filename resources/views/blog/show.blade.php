@@ -57,6 +57,16 @@
                                         <img src="{{ asset('landing/images/whatsapp.png') }}" alt="WhatsApp"
                                             class="whatsapp-icon" style="width: 25px; height: auto;">
                                     </a>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}"
+                                        target="_blank">
+                                        <img src="{{ asset('landing/images/facebook.png') }}" alt="Facebook"
+                                            class="facebook-icon" style="width: 25px; height: auto;">
+                                    </a>
+
+                                    <a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}" target="_blank">
+                                        <img src="{{ asset('landing/images/twitter.png') }}" alt="Twitter" class="twitter-icon" style="width: 25px; height: auto;">
+                                    </a>
+                                    
                                     <button onclick="copyURL()" class="btn btn-round btn-warning">Salin Link</button>
                                 </div>
                             </div><!-- .header-caption -->
@@ -76,7 +86,21 @@
                                 </div><!-- .col- -->
                             </div><!-- .row -->
                             <p></p>
-                            <img src="path_to_your_ad_image.jpg" alt="Iklan" width="830" height="90">
+                            <img src="path_to_your_ad_image.jpg" alt="Iklan" width="830" height="90"
+                                class="image-fluid">
+
+                                <script type="text/javascript">
+                                    var atid = "bugu4m110465",
+                                        atvalid = "https://s.lazada.co.id|https://www.lazada.co.id/|https://pages.lazada.co.id/",
+                                        timestamp = new Date().getTime(),
+                                        path = "https://accesstrade.co.id";
+                                    ! function(e) {
+                                        var t = e.createElement("script");
+                                        t.src = path + "/smart_link_at.js?cb=" + timestamp, t.async = !0;
+                                        var a = e.getElementsByTagName("script")[0];
+                                        a.parentNode.insertBefore(t, a)
+                                    }(document);
+                                </script>
 
                             <div class="row justify-content-start">
                                 <div class="col-lg-12 col-md-12">
