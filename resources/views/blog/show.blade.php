@@ -52,7 +52,6 @@
                                 <h2>{{ $blog->judul }}</h2>
                                 <small>{{ $blog->created_at }}</small>
                                 <div style="float: right">
-                                    {{-- <p>{{ $kunjungan }}</p> --}}
                                     <a href="https://api.whatsapp.com/send/?text={{ url()->current() }}">
                                         <img src="{{ asset('landing/images/whatsapp.png') }}" alt="WhatsApp"
                                             class="whatsapp-icon" style="width: 25px; height: auto;">
@@ -300,17 +299,14 @@
         var content = contentContainer.innerHTML;
         var paragraphs = contentContainer.getElementsByTagName("p");
 
-        // Menentukan titik sisipan iklan
         var insertionPoint;
         if (paragraphs.length > 0) {
             var midIndex = Math.ceil(paragraphs.length / 2);
             insertionPoint = paragraphs[midIndex - 1];
         } else {
-            // Jika tidak ada paragraf, sisipkan di akhir konten
             insertionPoint = contentContainer;
         }
 
-        // Menyisipkan iklan
         var iklan = document.createElement("div");
         iklan.innerHTML =
             '<div class="iklan"><a href="https://atid.me/adv.php?rk=00a0ix002d8h" target="_blank"><img src="https://imp.accesstra.de/img.php?rk=00a0ix002d8h" border="0" /></a></div>';
