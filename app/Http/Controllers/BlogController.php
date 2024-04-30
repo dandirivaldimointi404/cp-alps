@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function index()
     {
         $blog = Blog::orderBy('created_at', 'desc')->paginate(6);
-        $slider = Blog::all();
+        $slider = Blog::orderBy('created_at', 'desc')->get();
         return view('blog.index', compact('blog','slider'));
     }
 
