@@ -55,7 +55,7 @@
                     </div> --}}
 
                     <div class="slider">
-                        @foreach ($blog as $item)
+                        @foreach ($slider as $item)
                             <div class="slide">
                                 <div class="row flex-row-reverse justify-content-center g-gs">
                                     <div class="col-11">
@@ -77,7 +77,7 @@
                         @endforeach
                     </div>
 
-                
+
                     {{-- <div id="carouselExampleSlidesOnly" class="carousel slide col-lg-9 col-md-7" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             @php $active = true; @endphp
@@ -203,6 +203,14 @@
                         {{-- </div><!-- .row --> --}}
                     @endforeach
                 @endforeach
+                <div class="col-12">
+                    <nav>
+                        <ul class="pagination small">
+                            {{ $blog->links() }}
+
+                        </ul>
+                    </nav>
+                </div>
             </div><!-- .row -->
         </div><!-- .container -->
     </section>
@@ -235,7 +243,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="path/to/slick.min.js"></script>
-    
+
     <script>
         $(document).ready(function() {
             $('.slider').slick({
