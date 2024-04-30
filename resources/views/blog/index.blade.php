@@ -17,7 +17,7 @@
                     <div class="col-lg-12 col-md-7">
                         <div class="header-caption">
                             @php
-                                $postBlog = $blog->last();
+                                $postBlog = $slider->last();
                             @endphp
                             <div class="img-block mb-4 rounded-4"
                                 style="max-width: 100%; overflow: hidden; height: 400px; position: relative;">
